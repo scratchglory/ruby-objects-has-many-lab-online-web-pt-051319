@@ -35,6 +35,7 @@ class Artist
     song = Song.new(name)     # creates a new song
     @songs << song            # pushes it to the collection
     song.artist = self        # associates the song to the artist
+    binding.pry
   end
   
   def self.song_count
